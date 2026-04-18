@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green: #1a9e5c;
+  --green-dim: #0f6e3e;
+  --green-bg: #e8f7ef;
+  --amber: #e8a020;
+  --amber-bg: #fdf3e0;
+  --red: #d84040;
+  --red-bg: #fdeaea;
+  --purple: #7c5cbf;
+  --purple-bg: #f0ebfa;
+
+  --bg: #f9f8f6;
+  --card: #ffffff;
+  --border: rgba(0, 0, 0, 0.1);
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --surface: #f1f0ed;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111110;
+    --card: #1c1c1a;
+    --border: rgba(255, 255, 255, 0.1);
+    --text: #f0efe9;
+    --muted: #888784;
+    --surface: #242422;
+    --green-bg: #0a2e1a;
+    --amber-bg: #2e1f05;
+    --red-bg: #2e0d0d;
+    --purple-bg: #1a1228;
+  }
+}
+
+html, body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-syne), sans-serif;
+}
+
+input, select, button {
+  font-family: var(--font-syne), sans-serif;
+}
